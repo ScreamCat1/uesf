@@ -1,0 +1,39 @@
+.game-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__game {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding: 5px 6px;
+    margin-right: 12px;
+
+    &--primary {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+    }
+
+    &--secondary {
+      background-color: #2F3D5F;
+      color: #FFFFFF;
+    }
+  }
+
+  &__time {
+    font-size: 12px;
+    line-height: 15px;
+
+
+    &--primary {
+      color: #FFFFFF;
+    }
+
+    &--secondary {
+      color: #92A2CA;
+    }
+  }
+}

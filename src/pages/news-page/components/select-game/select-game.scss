@@ -1,0 +1,30 @@
+.select-game {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  position: relative;
+  display: flex;
+  padding: 8px 12px;
+  background: #212E4C;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 14px solid #141E37;
+    border-left: 20px solid transparent;
+  }
+
+  &__name {
+    margin-left: 8px;
+    margin-right: auto;
+  }
+}

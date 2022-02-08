@@ -1,0 +1,36 @@
+.news-item {
+
+  &__image {
+    object-fit: contain;
+    height: inherit;
+  }
+
+  picture {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    height: 209px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 30px solid #141E37;
+      border-left: 40px solid transparent;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+}

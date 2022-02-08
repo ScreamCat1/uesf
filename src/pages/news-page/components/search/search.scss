@@ -1,0 +1,26 @@
+.search {
+  position: relative;
+  display: flex;
+  padding: 9px 12px;
+  background: #212E4C;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 14px solid #141E37;
+    border-left: 20px solid transparent;
+  }
+
+  &__input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949DB5;
+    margin-left: 8px;
+  }
+}

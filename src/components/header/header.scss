@@ -1,0 +1,43 @@
+.header {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #212E4C;
+  position: relative;
+  z-index: 1;
+}
+
+.languages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item {
+
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+
+    &--active {
+
+      svg {
+        border: 2px solid #FF6F33;
+        border-radius: 4px;
+      }
+    }
+
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.main-slider {
+  //height: 262px;
+  position: relative;
+  padding: 16px;
+  background: #2199FD;
+  box-shadow: 0 20px 80px rgba(33, 121, 255, 0.4);
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #212E4C;
+    border-left: 24px solid transparent;
+  }
+
+  &__image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  &__figure {
+    position: relative;
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__actions {
+    margin-top: 26px;
+    position: relative;
+  }
+}
+
+.link {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141E37;
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.4);
+  background: white;
+
+  //&__main-bg {
+  //  position: absolute;
+  //  top: 0;
+  //  width: 100%;
+  //  right: 0;
+  //  height: 36px;
+  //  background-image: url("../../../public/assets/link-main-bg.svg");
+  //  background-repeat: no-repeat;
+  //}
+
+  //&__bg {
+  //  position: absolute;
+  //  bottom: 0;
+  //  width: 100%;
+  //  right: 0;
+  //  height: 100%;
+  //  background-image: url("../../../public/assets/link-bg.svg");
+  //  background-repeat: no-repeat;
+  //  background-position: bottom right;
+  //}
+}
+
+.actions {
+  position: absolute;
+  left: 0;
+  top: -10px;
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+
+    &--prev {
+      justify-content: flex-end;
+      transform: rotate(180deg);
+      margin-right: 16px;
+    }
+
+    &--next {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.dots {
+  //display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  line-height: 8px;
+
+  &__item {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  &__button {
+    padding: 0;
+    height: 8px;
+    width: 8px;
+    border: none;
+    background: #303F62;
+    transform: matrix(0.71, 0.69, -0.73, 0.71, 0, 0);
+
+    &--active {
+      background: #fff;
+    }
+  }
+}

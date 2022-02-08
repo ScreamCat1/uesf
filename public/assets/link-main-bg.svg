@@ -1,0 +1,10 @@
+<svg width="320" height="116" viewBox="0 0 320 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_400_9538)">
+<path d="M16 64H284.959L304 53.0714V28H16V38.2857V64Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_400_9538" x="0" y="0" width="320" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_400_9538" result="shape"/>
+</filter>
+</defs>
+</svg>

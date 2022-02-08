@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import { Header } from './components/header/header';
+import { MainSlider } from './components/main-slider/main-slider';
+import { Navigation } from './components/navigation/navigation';
+import { EventsPage } from './pages/events-page';
+import { NewsPage } from './pages/news-page';
+import { RepresentativeOfficesPage } from './pages/representative-offices-page';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="main">
+            <div className="banner">
+                banner
+            </div>
+            <Header/>
+            <MainSlider/>
+            <Routes>
+                <Route path="news" element={<NewsPage/>}/>
+                <Route path="events" element={<EventsPage/>}/>
+                <Route path="offices" element={<RepresentativeOfficesPage/>}/>
+            </Routes>
+            <Navigation/>
+        </div>
+    );
 }
 
 export default App;
